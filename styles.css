@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('b3280ab4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header h1 {
+    margin: 40px; /* マージン */
+    padding: 30px; /* パディング */
+    border: 5px solid #e8e8e8; /* 境界線 */
+    border-radius: 8px; /* ボーダーの角丸 */
+    background-color: 	#A1A3A6; /* 背景色 */
+    color: #404048; /* 文字色 */
+}
