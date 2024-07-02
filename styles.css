@@ -1,18 +1,137 @@
 @charset "UTF-8";
 
 body {
-    background-image: url('b3280ab4.png');
+    background-image: url('img/b3280ab4.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-header h1 {
-    margin: 40px; /* マージン */
-    padding: 30px; /* パディング */
+header .welcome-box {
+    margin: 90px; /* マージン */
+    padding: 20px 40px; /* 縦横のパディングを調整 */
     border: 5px solid #e8e8e8; /* 境界線 */
-    border-radius: 8px; /* ボーダーの角丸 */
-    background-color: 	#A1A3A6; /* 背景色 */
+    border-radius: 50px; /* 楕円形 */
+    background-color: #BFC5CA; /* 背景色 */
+    background-color:rgba(162, 162, 162, 0.6) ;
     color: #404048; /* 文字色 */
+    text-align: center; /* 中央揃え */
+    font-family: 'KachoFuugetsu', sans-serif; /* カスタムフォントを適用 */
+}
+
+header h1 {
+    font-size: 4em; /* フォントサイズを大きく */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* 各リストアイテム間のスペースを広げる */
+}
+
+nav li {
+    margin: 0 35px; /* リストアイテム間のマージンをさらに広げる */
+    font-size: 1.5em; /* フォントサイズを大きく */
+}
+
+nav a {
+    text-decoration: none;
+    color: #404048;
+    font-family: 'KachoFuugetsu', sans-serif;
+    font-size: 1.6em; /* フォントサイズを大きく */
+}
+
+nav a:hover {
+    color: blue; /* ホバー時に青く */
+}
+
+section {
+    margin-top: 60px; /* 各セクションの上部マージンを追加 */
+}
+
+section h2 {
+    font-size: 2em; /* セクションの見出しのフォントサイズを大きく */
+    margin-top: 40px; /* h2要素の上部マージンを広げる */
+    margin-bottom: 20px; /* h2要素の下部マージンを広げる */
+}
+
+section h3 {
+    font-size: 1.75em; /* サブ見出しのフォントサイズを大きく */
+    margin-top: 30px; /* h3要素の上部マージンを広げる */
+    margin-bottom: 20px; /* h3要素の下部マージンを広げる */
+}
+
+section p {
+    font-size: 1.5em; /* 段落のフォントサイズを大きく */
+}
+
+.photo-gallery img {
+    width: 200px; /* 画像の幅 */
+    height: auto; /* 画像の高さを自動調整 */
+    margin: 10px;
+}
+
+section#about .profile {
+    display: flex;
+    align-items: center; /* 中央揃え */
+    margin-bottom: 40px; /* 各プロフィールセクションの下にスペースを追加 */
+}
+
+section#about .profile-img {
+    float: left;
+    margin-right: 20px; /* 画像と文章の間のスペース */
+    width: 200px; /* 画像の幅 */
+    height: auto; /* 画像の高さを自動調整 */
+}
+
+#intro {
+    background-color: #BFC5CA;
+    background-color: rgba(183, 179, 179, 0.3);
+    width: 70%; /* 横幅を80%に設定 */
+    margin: 65px auto; /* 上下に30pxのマージンを追加して中央揃え */
+    text-align: center; /* テキストを中央揃えに設定 */
+    padding: 1px 0; /* 上下のパディングを追加 */
+    border-radius: 10px; /* 角を10pxの鋭角にする */
+}
+
+body, section h2, section h3, section p, footer p {
+    font-weight: 550; /* 文字を少し太く */
+    letter-spacing: 0.05em; /* 文字間隔を少し開ける */
+}
+
+header h1, nav a {
+    letter-spacing: normal; /* タイトルとナビゲーションリンクの文字間隔は通常 */
+}
+
+#about h2,
+#gallery h2 {
+    text-align: center; /* 見出しを中央揃えに */
+}
+
+#intro h2,
+#about h2,
+#gallery h2 {
+    font-size: 2.4em; /* ナビゲーションリンクと同じフォントサイズに設定 */
+}
+
+.photo-gallery img {
+    width: 290px; /* 画像の幅を少し大きく設定 */
+    height: 240px; /* 画像の高さを少し大きく設定 */
+    margin: 2.8px; /* 画像間のマージン */
+}
+
+#about .profile-text h3,
+#about .profile-text p {
+    text-indent: 20px; /* 例：テキストを右に20pxずらす */
+}
+
+#about .profile-text h3 {
+    letter-spacing: 0.17em; /* 文字間隔を広げる */
+}
+
+#about .profile-text p {
+    letter-spacing: 0.1em; /* 文字間隔を広げる */
 }

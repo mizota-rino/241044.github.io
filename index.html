@@ -1,50 +1,91 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>猫のサイト</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>ようこそ、猫のサイトへ！</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">ホーム</a></li>
-                    <li><a href="#profile">プロフィール</a></li>
-                    <li><a href="#gallery">猫のギャラリー</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-        <main id="content">
-            <!-- Home -->
-            <section id="home">
-                <h2>ホーム</h2>
-            </section>
-    
-            <!-- Profile -->
-            <section id="profile">
-                <h2>プロフィール</h2>
-                <p>私の猫について紹介します。</p>
-                <p>私の猫はとても賢く、毎日一緒に過ごすことが幸せです。</p>
-            </section>
-    
-            <!-- Gallery -->
-            <section id="gallery">
-                <h2>猫のギャラリー</h2>
-                <div class="photo-gallery">
-                    <img src="cat1.jpg" alt="猫の写真1">
-                    <img src="cat2.jpg" alt="猫の写真2">
-                    <img src="cat3.jpg" alt="猫の写真3">
-                    <!-- 他の写真もここに追加 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猫のサイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="welcome-box">
+            <h1>我が家のにゃんこたち</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">はじめに</a></li>
+                <li><a href="#about">プロフィール</a></li>
+                <li><a href="#gallery">猫のギャラリー</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <!-- Intro -->
+        <section id="intro">
+            <h2>はじめに</h2>
+            <p>このサイトでは、我が家のにゃんこたちについて紹介したいと思います</p>
+            <p>それぞれ性格の違う我が家のにゃんこたちをご堪能ください♪</p>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2>プロフィール</h2>
+            <div class="profile">
+                <img src="img/poteto.jpg" alt="ポテトの写真" class="profile-img" style="width: 290px; height: 240px; margin: 5px;">
+                <div class="profile-text">
+                    <h3>―ポテト―</h3>
+                    <p>まずは、最年長のポテトから紹介します。ポテトは３匹の中で一番身体が大きいですが、</p>
+                    <p>とても怖がりで温厚な性格です。</p>
+                    <p>撫でられるのが大好きなので、手を顔の辺りに近づけただけですぐに自分から撫でられに来ます。</p>
+                    <p>あと、ご飯を食べている途中にほかの子に横取りされることがよくあります。</p>
+                    <p>とられても目の前でじっと待つだけで、何故か怒りません( ´∀｀ )</p>
                 </div>
-            </section>
-        </main>
-    
-        <footer>
-            <p>© 2024 自分の名前</p>
-        </footer>
-    </body>
-    </html>
+            </div>
+
+            <div class="profile">
+                <img src="img/cocoa2.jpg" alt="ココアの写真" class="profile-img" style="width: 290px; height: 240px; margin: 5px;">
+                <div class="profile-text">
+                    <h3>―ココア―</h3>
+                    <p>次は、３匹の中で一番身体がぷにぷにしているココアを紹介します。</p>
+                    <p>好物はちゅーるで、母によくねだってきます。</p>
+                    <p>きっとちゅーるの食べ過ぎでぷにぷにになってしまったのでしょう。</p>
+                    <p>もちろんポテトにもあげていますが、お腹が弱いのでほんの少ししか上げられません（´・ω・｀）</p>
+                    <p>そして、ココアは季節関係なく膝の上によく乗ってくるので夏は暑くてたまりません（笑）</p>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="img/goma.jpg" alt="ゴマの写真" class="profile-img" style="width: 290px; height: 240px; margin: 5px;">
+                <div class="profile-text">
+                    <h3>―ゴマ―</h3>
+                    <p>最後に、甘えん坊のゴマを紹介します。ゴマはまだ生後１１ヶ月で、</p>
+                    <p>元気が有り余っているのかいつも家中を走り回っています。</p>
+                    <p>おもちゃで遊ぶのが好きで、手におもちゃを持って音を立てただけで</p>
+                    <p>家のどこにいてもすぐに走ってきます。</p>
+                    <p>あと、ココアによくちょっかいをかけては怒られていますが、</p>
+                    <p>懲りずに何回も行くような元気な子です((´∀｀*))</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section id="gallery">
+            <h2>猫のギャラリー</h2>
+            <div class="photo-gallery">
+                <img src="img/poteto2.jpg"width="350" height="175" alt="ポテト">
+                <img src="img/cocoa3.jpg"width="350" height="175" alt="ココア">
+                <img src="img/goma2.jpg"width="350" height="175" alt="ゴマ">
+                <img src="img/poteco.jpg"width="350" height="175" alt="ポテト">
+                <img src="img/poteco2.jpg"width="350" height="175" alt="">
+                <!-- 他の写真もここに追加 -->
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: right;">
+        <br> <!-- 改行を挿入 -->
+        <p>© 2024 溝田梨乃</p>
+    </footer>
+</body>
+</html>
