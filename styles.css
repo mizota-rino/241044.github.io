@@ -135,3 +135,15 @@ header h1, nav a {
 #about .profile-text p {
     letter-spacing: 0.1em; /* 文字間隔を広げる */
 }
+
+.decorative-image {
+    width: auto; /* 画像の幅を自動調整 */
+    height: 60px; /* 画像の高さを小さく設定 */
+    vertical-align: middle; /* 画像をテキストの中央に揃える */
+}
+
+.inline-image {
+    width: 120px; /* 画像の幅を非常に小さく設定 */
+    height: 120px; /* 画像の高さを非常に小さく設定 */
+    vertical-align: bottom; /* 画像を文字の下部に揃える */
+}
