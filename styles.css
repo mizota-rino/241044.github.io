@@ -68,10 +68,17 @@ section p {
     font-size: 1.5em; /* 段落のフォントサイズを大きく */
 }
 
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* 画像間のスペース */
+}
+
 .photo-gallery img {
-    width: 200px; /* 画像の幅 */
+    width: 100%;
+    max-width: 350px; /* 画像の最大幅 */
     height: auto; /* 画像の高さを自動調整 */
-    margin: 10px;
 }
 
 section#about .profile {
@@ -117,12 +124,6 @@ header h1, nav a {
     font-size: 2.4em; /* ナビゲーションリンクと同じフォントサイズに設定 */
 }
 
-.photo-gallery img {
-    width: 290px; /* 画像の幅を少し大きく設定 */
-    height: 240px; /* 画像の高さを少し大きく設定 */
-    margin: 2.8px; /* 画像間のマージン */
-}
-
 #about .profile-text h3,
 #about .profile-text p {
     text-indent: 20px; /* 例：テキストを右に20pxずらす */
@@ -146,4 +147,20 @@ header h1, nav a {
     width: 120px; /* 画像の幅を非常に小さく設定 */
     height: 120px; /* 画像の高さを非常に小さく設定 */
     vertical-align: bottom; /* 画像を文字の下部に揃える */
+}
+
+/* レスポンシブデザイン: 画面幅が600px以上の場合 */
+@media screen and (min-width: 600px) {
+    .photo-gallery img {
+        width: calc(33.333% - 20px); /* 3カラムレイアウト */
+        margin: 10px; /* 画像間のスペース */
+    }
+}
+
+/* レスポンシブデザイン: 画面幅が900px以上の場合 */
+@media screen and (min-width: 900px) {
+    .photo-gallery img {
+        width: calc(33.333% - 20px); /* 3カラムレイアウト */
+        margin: 10px; /* 画像間のスペース */
+    }
 }
